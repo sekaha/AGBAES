@@ -1,0 +1,46 @@
+# Hydraulic Erosion with CNN: A Real-Time Terrain Simulation Framework
+
+This repository accompanies the paper detailing a convolutional neural network (CNN) implementation for simulating hydraulic erosion on heightmaps. Designed for game development and real-time terrain authoring, the CNN achieves high performance and generates realistic terrain features efficiently.
+
+Note, the paper was just made for a university course, so it's less polished than a typical academic publication.
+
+## Key Features
+
+- **Architecture**: Based on a modified pix2pix model, the framework incorporates encoder-decoder structures and a patch-based discriminator. The generator utilizes dilated convolution layers to capture long-range spatial patterns like sediment carry.
+- **Performance**: This model performs signifigantly faster than traditional simulation (**~192x** faster than the simulation we used to generate the training data). On three Quadro RTX 6000/8000 GPUs, the model generates 32 terrain images in 0.1 seconds. Even a single GTX 1060 achieves this in 0.3 seconds, making it suitable for real-time applications.
+- **Data Generalization**: Trained on a diverse set of procedurally generated heightmaps (e.g., Perlin noise), the model demonstrates adaptability by effectively simulating erosion on unseen data.
+- **Limitations**: The model exhibits minor grid artifacts in the output terrain and can benefit from further refinements in detail generation.
+
+![image](https://github.com/user-attachments/assets/794a98d2-9521-4655-b371-eb6918807add)
+
+## Datasets
+
+The training data was created using a custom data acquisition pipeline, described in detail in the "Datasets" section of the final project report. 
+
+- **Input Images**: Generated using Perlin noise maps with adjustable parameters such as scale, noise level, amplitudes, and variances and distrubted these variables according to a normal distribution. These parameters enabled the creation of diverse terrain characteristics and helped avoid artifacts resulting from sparse input.
+- **Output Images**: Created by running the input DEMs through a hydraulic erosion algorithm.
+
+To optimize the data for GAN-based architectures, images were encoded as 16-bit `.tiff` files, allowing parameter values to range from 0–65535 (important for smooth height representation). Encoding details:
+- **Red Channel**: Height (the only value that differs between input and output).
+- **Green Channel**: Rock hardness.
+- **Blue Channel**: Erosion amount in simulation (constant).
+
+![image](https://github.com/user-attachments/assets/d5413940-0c85-4797-9770-1fa9df8df85b)
+
+
+## Model Overview
+
+### Generator
+- **Encoder**: Downsampling with dilated convolutions to capture both local and long-distance features.
+- **Decoder**: Transposed convolutions and dilated layers to upsample and refine the output.
+
+### Discriminator
+- Patch-based evaluation (patch size: 70×70) focuses on localized details for realistic texture reproduction.
+
+### Training
+- **Loss Function**: Mean Absolute Error (MAE) and LPIPS for realism and perceptual similarity.
+- **Augmentation**: Random rotations to improve robustness across terrain orientations.
+- Hardware: Trained on three Quadro RTX (6000/8000) GPUs over 200 epochs (21 hours).
+
+## Results
+![image](https://github.com/user-attachments/assets/1d6bfeb7-8f7b-467d-afba-9696efae04af)
