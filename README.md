@@ -1,4 +1,4 @@
-# Hydraulic Erosion with CNN: A Real-Time Terrain Simulation Framework
+# A Gan-Based Approach to Erosion Simulation
 
 This repository accompanies the paper detailing a convolutional neural network (CNN) implementation for simulating hydraulic erosion on heightmaps. Designed for game development and real-time terrain authoring, the CNN achieves high performance and generates realistic terrain features efficiently.
 
@@ -11,8 +11,6 @@ Note, the paper was just made for a university course, so it's less polished tha
 - **Data Generalization**: Trained on a diverse set of procedurally generated heightmaps (e.g., Perlin noise), the model demonstrates adaptability by effectively simulating erosion on unseen data.
 - **Limitations**: The model exhibits minor grid artifacts in the output terrain and can benefit from further refinements in detail generation.
 
-![image](https://github.com/user-attachments/assets/794a98d2-9521-4655-b371-eb6918807add)
-
 ## Datasets
 
 The training data was created using a custom data acquisition pipeline, described in detail in the "Datasets" section of the final project report. 
@@ -24,6 +22,8 @@ To optimize the data for GAN-based architectures, images were encoded as 16-bit 
 - **Red Channel**: Height (the only value that differs between input and output).
 - **Green Channel**: Rock hardness.
 - **Blue Channel**: Erosion amount in simulation (constant).
+
+![image](https://github.com/user-attachments/assets/794a98d2-9521-4655-b371-eb6918807add)
 
 ![image](https://github.com/user-attachments/assets/d5413940-0c85-4797-9770-1fa9df8df85b)
 
@@ -44,3 +44,21 @@ To optimize the data for GAN-based architectures, images were encoded as 16-bit 
 
 ## Results
 ![image](https://github.com/user-attachments/assets/1d6bfeb7-8f7b-467d-afba-9696efae04af)
+
+![image](https://github.com/user-attachments/assets/d17c4199-d9d8-49f0-acee-ab54c196dc1f)
+
+![image](https://github.com/user-attachments/assets/213f36f2-7788-42f1-af63-806cdb23f9b4)
+
+
+### Input
+
+![image](https://github.com/user-attachments/assets/57a493c6-d8fe-4139-9810-70e98e4ad48c)
+
+
+### Predicted
+
+![image](https://github.com/user-attachments/assets/bf70288c-c247-453d-8775-4280cc57ffba)
+
+### Actual
+
+![image](https://github.com/user-attachments/assets/2ef888fc-dce5-4f9c-9ef7-3053c1a3e905)
