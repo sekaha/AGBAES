@@ -6,6 +6,31 @@ This repository contains code and a paper detailing a convolutional neural netwo
 
 Note: the paper was just made for a university course, so it's less polished than a typical academic publication. See our presentation here: [Google Slides Link](https://docs.google.com/presentation/d/1EYl_tC0HDfzUmDDKzc6oarilb0BzYCXmm8SSXUFyuRQ/edit?usp=sharing).
 
+---
+
+## Results
+![image](https://github.com/user-attachments/assets/1d6bfeb7-8f7b-467d-afba-9696efae04af)
+
+![image](https://github.com/user-attachments/assets/d17c4199-d9d8-49f0-acee-ab54c196dc1f)
+
+![image](https://github.com/user-attachments/assets/213f36f2-7788-42f1-af63-806cdb23f9b4)
+
+
+### Input
+
+![image](https://github.com/user-attachments/assets/57a493c6-d8fe-4139-9810-70e98e4ad48c)
+
+
+### Predicted
+
+![image](https://github.com/user-attachments/assets/bf70288c-c247-453d-8775-4280cc57ffba)
+
+### Actual
+
+![image](https://github.com/user-attachments/assets/2ef888fc-dce5-4f9c-9ef7-3053c1a3e905)
+
+---
+
 ## Key Features
 
 - **Architecture**: Based on a modified pix2pix model, the framework incorporates encoder-decoder structures and a patch-based discriminator. The generator utilizes dilated convolution layers to capture long-range spatial patterns like sediment carry.
@@ -45,27 +70,6 @@ Encoding details:
 - **Loss Function**: Mean Absolute Error (MAE) and LPIPS for realism and perceptual similarity.
 - **Augmentation**: Random rotations to improve robustness across terrain orientations.
 - Hardware: Trained on three Quadro RTX (6000/8000) GPUs over 200 epochs (21 hours).
-
-## Results
-![image](https://github.com/user-attachments/assets/1d6bfeb7-8f7b-467d-afba-9696efae04af)
-
-![image](https://github.com/user-attachments/assets/d17c4199-d9d8-49f0-acee-ab54c196dc1f)
-
-![image](https://github.com/user-attachments/assets/213f36f2-7788-42f1-af63-806cdb23f9b4)
-
-
-### Input
-
-![image](https://github.com/user-attachments/assets/57a493c6-d8fe-4139-9810-70e98e4ad48c)
-
-
-### Predicted
-
-![image](https://github.com/user-attachments/assets/bf70288c-c247-453d-8775-4280cc57ffba)
-
-### Actual
-
-![image](https://github.com/user-attachments/assets/2ef888fc-dce5-4f9c-9ef7-3053c1a3e905)
 
 ---
 
