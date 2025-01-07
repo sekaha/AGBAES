@@ -1,8 +1,10 @@
 # A Gan-Based Approach to Erosion Simulation
 
-This repository accompanies the paper detailing a convolutional neural network (CNN) implementation for simulating hydraulic erosion on heightmaps. Designed for game development and real-time terrain authoring, the CNN achieves high performance and generates realistic terrain features efficiently.
+Authors: David Sommerfield and Nicholas Moen
 
-Note, the paper was just made for a university course, so it's less polished than a typical academic publication.
+This repository contains code and a paper detailing a convolutional neural network (CNN) implementation for simulating hydraulic erosion on heightmaps. Designed for game development and real-time terrain authoring, the CNN achieves high performance and generates realistic terrain features efficiently.
+
+Note: the paper was just made for a university course, so it's less polished than a typical academic publication. See our presentation here: [Google Slides Link](https://docs.google.com/presentation/d/1EYl_tC0HDfzUmDDKzc6oarilb0BzYCXmm8SSXUFyuRQ/edit?usp=sharing).
 
 ## Key Features
 
