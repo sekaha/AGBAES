@@ -117,7 +117,7 @@ This will generate output images (`inp_.png`, `generated_.png`, and `real_.png`)
 
 ### Custom Images
 
-You can modify the `ErosionOnFileWith8_BitImages()` function in `test_generator.py` to use your own images (e.g., `test.png`, `blurredhllogo.png`). The outputs will be saved as `art_output.png` and `eroded_hllogo.png`.
+You can modify the `ErosionOnFileWith8_BitImages()` function in `test_generator.py` to use your own images.
 
 ### Dependencies
 
