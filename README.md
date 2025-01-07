@@ -20,7 +20,9 @@ The training data was created using a custom data acquisition pipeline, describe
 - **Input Images**: Generated using Perlin noise maps with adjustable parameters such as scale, noise level, amplitudes, and variances and distrubted these variables according to a normal distribution. These parameters enabled the creation of diverse terrain characteristics and helped avoid artifacts resulting from sparse input.
 - **Output Images**: Created by running the input DEMs through a hydraulic erosion algorithm.
 
-To optimize the data for GAN-based architectures, images were encoded as 16-bit `.tiff` files, allowing parameter values to range from 0–65535 (important for smooth height representation). Encoding details:
+To optimize the data for GAN-based architectures, images were encoded as 16-bit `.tiff` files, allowing parameter values to range from 0–65535 (important for smooth height representation). 
+
+Encoding details:
 - **Red Channel**: Height (the only value that differs between input and output).
 - **Green Channel**: Rock hardness.
 - **Blue Channel**: Erosion amount in simulation (constant).
