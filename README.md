@@ -50,7 +50,7 @@ To optimize the data for GAN-based architectures, images were encoded as 16-bit 
 Encoding details:
 - **Red Channel**: Height (the only value that differs between input and output).
 - **Green Channel**: Rock hardness.
-- **Blue Channel**: Erosion amount in simulation (constant).
+- **Blue Channel**: Erosion amount in simulation (constant per image).
 
 ![image](https://github.com/user-attachments/assets/794a98d2-9521-4655-b371-eb6918807add)
 
