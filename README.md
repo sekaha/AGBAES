@@ -68,8 +68,8 @@ Encoding details:
 
 ### Training
 - **Loss Function**: Mean Absolute Error (MAE) and LPIPS for realism and perceptual similarity.
-- **Augmentation**: Random rotations to improve robustness across terrain orientations.
-- Hardware: Trained on three Quadro RTX (6000/8000) GPUs over 200 epochs (21 hours).
+- **Augmentation**: Random rotations to improve robustness across terrain orientations (not strictly necessary).
+- **Hardware**: Trained on three Quadro RTX (6000/8000) GPUs over 200 epochs (21 hours).
 
 ---
 
