@@ -92,7 +92,7 @@ conda activate agbaes_env
 ### Training
 To start training:
 1. Navigate to `models` directory:
-```
+```bash
 cd models
 ```
 
