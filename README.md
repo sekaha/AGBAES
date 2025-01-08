@@ -79,6 +79,7 @@ Encoding details:
 ```bash
 conda env create -f agbaes_env.yaml
 ```
+Or if you want just make sure your dependencies match.
 
 2. **Activate Environment**:
 ```bash
@@ -118,17 +119,6 @@ This will generate output images (`inp_.png`, `generated_.png`, and `real_.png`)
 ### Custom Images
 
 You can modify the `ErosionOnFileWith8_BitImages()` function in `test_generator.py` to use your own images.
-
-### Dependencies
-
-- **Python**: 3.11.3
-- **Keras**: 2.4.3
-- **Tensorflow**: 2.4.1
-- **PyTorch**: 2.2.0
-- **CUDA**: cudnn=7.6.5
-- **NumPy**: 1.23.1
-
-More specifics are listed in the `agbaes_env.yaml` file.
 
 ---
 For further details, consult the provided paper or feel free to contact us.
