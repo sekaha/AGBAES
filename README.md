@@ -114,7 +114,7 @@ cd test
 python3 test_generator.py
 ```
 
-This will generate output images (`inp_.png`, `generated_.png`, and `real_.png`) for evaluation.
+This will generate output images for evaluation.
 
 ### Custom Images
 
