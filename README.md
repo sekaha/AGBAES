@@ -79,7 +79,7 @@ Encoding details:
 ```bash
 conda env create -f agbaes_env.yaml
 ```
-Or if you want just make sure your dependencies match.
+- Or if you want just make sure your dependencies match.
 
 2. **Activate Environment**:
 ```bash
