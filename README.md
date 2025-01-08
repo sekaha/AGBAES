@@ -128,6 +128,8 @@ You can modify the `ErosionOnFileWith8_BitImages()` function in `test_generator.
 - **CUDA**: cudnn=7.6.5
 - **NumPy**: 1.23.1
 
+More specifics are listed in the .yaml file.
+
 ---
 For further details, consult the provided paper or feel free to contact us.
 
