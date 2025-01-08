@@ -77,12 +77,12 @@ Encoding details:
 
 1. **Create Conda Environment**:
 ```bash
-conda env create -f tfnumpy.yaml
+conda env create -f agbaes_env.yaml
 ```
 
 2. **Activate Environment**:
 ```bash
-conda activate tfnumpy
+conda activate agbaes_env
 ```
 
 3. **Configure Dataset Path**: 
@@ -128,7 +128,7 @@ You can modify the `ErosionOnFileWith8_BitImages()` function in `test_generator.
 - **CUDA**: cudnn=7.6.5
 - **NumPy**: 1.23.1
 
-More specifics are listed in the .yaml file.
+More specifics are listed in the `agbaes_env.yaml` file.
 
 ---
 For further details, consult the provided paper or feel free to contact us.
