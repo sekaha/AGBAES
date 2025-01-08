@@ -86,13 +86,13 @@ conda activate tfnumpy
 ```
 
 3. **Configure Dataset Path**: 
-- Change the `dataPath` variable in `Codes/ErosionArchitecture/test/test_generator.py` (line 83) and `Codes/ErosionArchitecture/models/train.py` (line 92).
+- Change the `dataPath` variable in `test/test_generator.py` (line 83) and `models/train.py` (line 92).
 
 ### Training
 To start training:
 1. Navigate to `models` directory:
 ```
-cd Codes/ErosionArchitecture/models
+cd models
 ```
 
 2. Run the training Script
@@ -105,7 +105,7 @@ python3 train.py
 After training, run the testing script:
 1. Navigate to `test` directory:
 ```bash
-cd Codes/ErosionArchitecture/test
+cd test
 ```
 
 2. Run the test script:
