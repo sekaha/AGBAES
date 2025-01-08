@@ -2,7 +2,7 @@
 
 Authors: David Sommerfield and Nicholas Moen
 
-This repository contains code and a paper detailing a convolutional neural network (CNN) implementation for simulating hydraulic erosion on heightmaps. Designed for game development and real-time terrain authoring, the CNN achieves high performance and generates realistic terrain features efficiently.
+This repository contains code and a paper detailing a method for simulating hydraulic erosion on heightmaps. It utilizes a GAN framework for training, while the core architecture is a high-performance CNN designed for realistic and efficient terrain generation. This approach is enables high speed terrain procedural terrain generation and real-time terrain authoring in artistic applications.
 
 Note: the paper was just made for a university course, so it's less polished than a typical academic publication. See our presentation here: [Google Slides Link](https://docs.google.com/presentation/d/1EYl_tC0HDfzUmDDKzc6oarilb0BzYCXmm8SSXUFyuRQ/edit?usp=sharing).
 
