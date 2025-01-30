@@ -1,6 +1,6 @@
 # A Gan-Based Approach to Erosion Simulation
 
-Authors: David Sommerfield and Nicholas Moen
+**Authors**: David Sommerfield and Nicholas Moen
 
 This repository contains code and a paper detailing a method for simulating hydraulic erosion on heightmaps. It utilizes a GAN framework for training, while the core architecture is a high-performance CNN designed for realistic and efficient terrain generation. This approach is enables high speed terrain procedural terrain generation and real-time terrain authoring in artistic applications.
 
